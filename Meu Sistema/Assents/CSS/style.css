@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Padrão */
+    outline: none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    cursor: default;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
