@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro</title>
+
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/inscrever-se.css">
+</head>
+
+<body class="preload">
+    <div class="Container">
+        <div class="Div-Form">
+            <form action="">
+                <fieldset>
+                    <legend>
+                        <h2>Formulário de Cadastro do Usuário</h2>
+                    </legend>
+
+                    <div class="Box-Entrada">
+                        <label for="Nome-User">Nome Completo</label>
+                        <input type="text" name="Nome-User" placeholder="Vinícius" required>
+                    </div>
+
+                    <div class="Box-Entrada">
+                        <label for="Email-User">E-Mail</label>
+                        <input type="email" name="Email-User" placeholder="email@gmail.com" required>
+                    </div>
+
+                    <div class="Box-Entrada">
+                        <label for="Cell-User">Telefone</label>
+                        <input type="tel" name="Cell-User" placeholder="+55 51 9.0000-0000" required>
+                    </div>
+
+                    <div class="Box-Entrada">
+                        <label for="Sexo-User">Sexo</label>
+
+                        <div class="Box-Select">
+                            <input type="radio" name="Sexo-Masculino" value="Masculino">
+                            <label for="Sexo-Masculino">Masculino</label>
+                        </div>
+
+                        <div class="Box-Select">
+                            <input type="radio" name="Sexo-Feminino" value="Feminino">
+                            <label for="Sexo-Feminino">Feminino</label>
+                        </div>
+                    </div>
+
+                    <div class="Box-Entrada">
+                        <label for="DataNasc-User">Data de Nascimento</label>
+                        <input type="date" name="DataNasc-User" required>
+                    </div>
+
+                    <div class="Box-Entrada">
+                        <label for="City-User">Cidade</label>
+                        <input type="text" name="City-User" placeholder="Viamão" required>
+                    </div>
+
+                    <div class="Box-Buttons">
+                        <button type="submit">Inscrever-se</button>
+                        <button>
+                            <!-- Espera um tempo na troca de Páginas -->
+                            <!-- <a href="#" onclick="setTimeout(() => { window.location.href='../../index.html'; }, 100); return false;">Voltar</a> -->
+                            <a href="../../index.html" onclick="Transicao_Suave(event)">Voltar</a>
+                        </button>
+                    </div>
+
+                    <!-- 
+                        inscrever-se.html?Nome-User=Vinícius&       (&)<- Separação
+                        Email-User=teste%40gmail.com&
+                        Cell-User=55+51+9.1234-1234&
+                        Sexo-Masculino=Masculino&
+                        DataNasc-User=2001-01-23&
+                        City-User=Viamão
+                    -->
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <script src="../Scripts/Delay-Pages.js" defer></script>
+</body>
+
+</html>
