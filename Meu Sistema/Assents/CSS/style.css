@@ -13,10 +13,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-:root{
+:root {
     --Cor-Detalhes: #9da8fd;
-    /* --Cor-Detalhes2: #4660fc; */
     --Cor-Detalhes2: #4f5dfe;
+    --Cor-Detalhes3: #4660fc;
 }
 
 .Container {
@@ -45,12 +45,14 @@
         font-size: 0.8rem;
         font-weight: 500;
         color: var(--Cor-Detalhes2);
+        letter-spacing: 1px;
     }
 
     input {
         background-color: transparent;
         padding: 2px 6px;
         font-size: 0.8rem;
+        letter-spacing: 1.4px;
     }
 
     input::placeholder {
@@ -66,4 +68,15 @@
 
 .Box-Entrada:hover {
     border-left: 10px solid var(--Cor-Detalhes2);
+}
+
+.Box-Buttons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    gap: 12px;
+    padding: 6px;
 }
