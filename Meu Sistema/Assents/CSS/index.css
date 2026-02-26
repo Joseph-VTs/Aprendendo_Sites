@@ -114,6 +114,7 @@
                 p:hover{
                     transform: scale(1);
                     opacity: 1;
+                    cursor: pointer;
                 }
             }
             div:nth-child(3){
